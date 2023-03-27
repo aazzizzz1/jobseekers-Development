@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "471837362132",
+    "project_id": "jobs-seekers-kotlin",
+    "storage_bucket": "jobs-seekers-kotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471837362132:android:7a3a1e2ec490411d89b841",
+        "android_client_info": {
+          "package_name": "com.example.jobseeker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471837362132-ooj1iep244l0bjqrduv188ad12uf5mm2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhahHyy_-F7YFePI3Psnhrar6q-gg8KPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471837362132-ooj1iep244l0bjqrduv188ad12uf5mm2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

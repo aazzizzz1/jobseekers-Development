@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/id_home_fragment"
+        android:title="Home"
+        android:icon="@drawable/vector_home"
+        />
+
+    <item
+        android:id="@+id/id_search_fragment"
+        android:title="Search"
+        android:icon="@drawable/vector_search"
+        />
+
+    <item
+        android:id="@+id/id_bookmark_fragment"
+        android:title="Bookmarks"
+        android:icon="@drawable/vector_bookmark"
+        />
+
+    <item
+        android:id="@+id/notesFragment"
+        android:title="Notes"
+        android:icon="@drawable/vector_notes"
+        />
+
+    <item
+        android:id="@+id/id_profile_fragment"
+        android:title="Profile"
+        android:icon="@drawable/vector_person"
+        />
+
+</menu>

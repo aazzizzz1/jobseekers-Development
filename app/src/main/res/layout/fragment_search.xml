@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hai ini halaman search"
+            />
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:background="@color/primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jobs_toolbar"
+            app:title="Search Job"
+            app:titleTextColor="@color/white">
+
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="wrap_content"
+                android:id="@+id/jobs_search"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewfeaturedjob"
+            android:layout_width="match_parent"
+            android:layout_below="@id/jobs_toolbar"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:itemCount="5"
+            tools:listitem="@layout/adapter_featured_job" />
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/splashscreen"
+                android:scaleType="fitCenter"
+                android:background="@drawable/circle_avatar"/>
+
+            <TextView
+                android:id="@+id/company"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_toRightOf="@id/image"
+                android:text="johndoe@example.com"
+                android:textSize="16sp"/>
+
+            <ImageButton
+                android:id="@+id/bookmark_icon"
+                android:contentDescription="@string/app_name"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/vector_bookmark_add"
+                android:background="@android:color/transparent"
+                android:layout_alignParentEnd="true"
+                />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/image"
+                android:layout_below="@id/company"
+                android:text="deskripsi"
+                android:textSize="16sp"/>
+
+            <LinearLayout
+                android:id="@+id/social_media_layout"
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@id/image"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/salary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Salary"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:paddingRight="16dp"
+                    android:text="Full Time"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

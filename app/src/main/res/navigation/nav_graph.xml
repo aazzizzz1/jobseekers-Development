@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.jobseeker.fragment.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.jobseeker.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_id_home_fragment"
+            app:destination="@id/id_home_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.jobseeker.fragment.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/id_home_fragment"
+        android:name="com.example.jobseeker.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/id_profile_fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_bookmarkFragment"
+            app:destination="@id/id_bookmark_fragment" />
+        <action
+            android:id="@+id/action_id_home_fragment_to_id_search_fragment"
+            app:destination="@id/id_search_fragment" />
+        <action
+            android:id="@+id/action_id_home_fragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+        <action
+            android:id="@+id/action_id_home_fragment_to_createNoteFragment"
+            app:destination="@id/createNoteFragment" />
+        <action
+            android:id="@+id/action_id_home_fragment_to_noteBottomSheetFragment"
+            app:destination="@id/noteBottomSheetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/id_profile_fragment"
+        android:name="com.example.jobseeker.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_id_profile_fragment_to_splashScreenFragment"
+            app:destination="@id/splashScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/id_bookmark_fragment"
+        android:name="com.example.jobseeker.fragment.BookmarkFragment"
+        android:label="fragment_bookmark"
+        tools:layout="@layout/fragment_bookmark" >
+        <action
+            android:id="@+id/action_id_bookmark_fragment_to_tambahJobFragment"
+            app:destination="@id/tambahJobFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/id_search_fragment"
+        android:name="com.example.jobseeker.fragment.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/createNoteFragment"
+        android:name="com.example.jobseeker.fragment.CreateNoteFragment"
+        android:label="fragment_create_note"
+        tools:layout="@layout/fragment_create_note" >
+        <action
+            android:id="@+id/action_createNoteFragment_to_noteBottomSheetFragment"
+            app:destination="@id/noteBottomSheetFragment" />
+        <action
+            android:id="@+id/action_createNoteFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.jobseeker.fragment.NotesFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notesFragment_to_createNoteFragment"
+            app:destination="@id/createNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteBottomSheetFragment"
+        android:name="com.example.jobseeker.fragment.NoteBottomSheetFragment"
+        android:label="fragment_note_bottom_sheet"
+        tools:layout="@layout/fragment_note_bottom_sheet" >
+        <action
+            android:id="@+id/action_noteBottomSheetFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tambahJobFragment"
+        android:name="com.example.jobseeker.fragment.TambahJobFragment"
+        android:label="fragment_tambah_job"
+        tools:layout="@layout/fragment_tambah_job" />
+</navigation>
